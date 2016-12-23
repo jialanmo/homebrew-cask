@@ -1,10 +1,10 @@
 cask 'ncar-ncl' do
   version '6.3.0'
 
-  if MacOS.release == :mountain_lion
+  if MacOS.version == :mountain_lion
     sha256 '154914834df0eeb69b778698062900175a5dcc88dcd76545cc2c504551cd756a'
     url 'https://www.earthsystemgrid.org/download/fileDownload.htm?logicalFileId=e0852fc5-cd9a-11e4-bb80-00c0f03d5b7c'
-  elsif MacOS.release == :mavericks
+  elsif MacOS.version == :mavericks
     sha256 'abe78b6830c43f8056cad02f5fbcbf4de82c4948b95b757b0d8a72d4776cbbf6'
     url 'https://www.earthsystemgrid.org/download/fileDownload.htm?logicalFileId=e0849384-cd9a-11e4-bb80-00c0f03d5b7c'
   else
@@ -15,12 +15,10 @@ cask 'ncar-ncl' do
   name 'NCAR Command Language'
   name 'ncl'
   homepage 'https://www.ncl.ucar.edu/'
-  license :oss
 
   depends_on cask: 'xquartz'
   depends_on formula: 'gcc'
-  depends_on macos: '>= 10.8'
-  depends_on arch: :x86_64
+  depends_on macos: '>= :mountain_lion'
 
   artifact 'include', target: '/usr/local/ncl-6.3.0/include'
   artifact 'bin', target: '/usr/local/ncl-6.3.0/bin'

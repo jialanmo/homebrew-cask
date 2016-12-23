@@ -4,8 +4,7 @@ cask 'openttd' do
 
   url "http://binaries.openttd.org/releases/#{version}/openttd-#{version}-macosx-universal.zip"
   name 'OpenTTD'
-  homepage 'http://openttd.org'
-  license :gpl
+  homepage 'http://www.openttd.org/'
 
   app 'OpenTTD.app'
 end

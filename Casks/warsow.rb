@@ -4,8 +4,7 @@ cask 'warsow' do
 
   url "https://www.warsow.gg/download?dl=warsow#{version.no_dots}mac"
   name 'Warsow'
-  homepage 'http://www.warsow.gg/'
-  license :gpl
+  homepage 'https://www.warsow.gg/'
 
   app 'Warsow.app'
 end

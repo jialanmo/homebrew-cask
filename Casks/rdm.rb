@@ -7,8 +7,7 @@ cask 'rdm' do
   appcast 'https://github.com/uglide/RedisDesktopManager/releases.atom',
           checkpoint: '55c262996d7b3d7809ae543638792d70b6a1d2d26e817eeffe8a7ed6da3391fe'
   name 'Redis Desktop Manager'
-  homepage 'http://redisdesktop.com/'
-  license :gpl
+  homepage 'https://redisdesktop.com/'
 
   app 'rdm.app'
 end

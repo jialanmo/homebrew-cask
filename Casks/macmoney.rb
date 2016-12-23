@@ -5,9 +5,6 @@ cask 'macmoney' do
   url "http://www.devon.riceball.net/downloads/macmoney#{version.no_dots}.zip"
   name 'MacMoney'
   homepage 'http://www.devon.riceball.net/display.php?file=m01'
-  license :commercial
-
-  container nested: "MacMoney_#{version}.dmg"
 
   app 'MacMoney.app'
 end

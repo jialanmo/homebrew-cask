@@ -1,12 +1,11 @@
 cask 'sqlpro-for-mssql' do
-  version '1.0.73'
-  sha256 'a7737293009e0d458359ed53340d125f0aadf16122b020879b624e7312c18811'
+  version '1.0.133'
+  sha256 '34d67ceca14902964663b3f680e2a9b407f50f3a9c67fe089a06a5cce5aba5af'
 
   # d3fwkemdw8spx3.cloudfront.net/mssql was verified as official when first introduced to the cask
   url "https://d3fwkemdw8spx3.cloudfront.net/mssql/SQLProMSSQL.#{version}.app.zip"
   name 'SQLPro for MSSQL'
-  homepage 'http://www.macsqlclient.com'
-  license :commercial
+  homepage 'https://www.macsqlclient.com/'
 
   app 'SQLPro for MSSQL.app'
 

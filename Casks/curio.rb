@@ -4,8 +4,7 @@ cask 'curio' do
 
   url 'http://zengobi.com/downloads/Curio.zip'
   name 'Curio'
-  homepage 'http://zengobi.com/products/curio/'
-  license :commercial
+  homepage 'https://zengobi.com/products/curio/'
 
   app 'Curio.app'
 end

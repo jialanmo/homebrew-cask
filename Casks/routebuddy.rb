@@ -5,8 +5,7 @@ cask 'routebuddy' do
   # objects.dreamhost.com/routebuddy was verified as official when first introduced to the cask
   url "https://objects.dreamhost.com/routebuddy/download/apps/RouteBuddy_#{version}.dmg"
   name 'RouteBuddy'
-  homepage 'http://routebuddy.com/'
-  license :commercial
+  homepage 'https://routebuddy.com/'
 
   app 'RouteBuddy.app'
 end

@@ -8,9 +8,6 @@ cask 'fenix' do
           checkpoint: '57b8ed989956042b16b76844cb4c294c8b31e0aba29cd349ebb69d91588c2daa'
   name 'Fenix'
   homepage 'http://fenixwebserver.com/'
-  license :gpl
-
-  container nested: "Fenix_#{version}.dmg"
 
   app 'Fenix.app'
 end

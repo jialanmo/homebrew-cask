@@ -1,14 +1,13 @@
 cask 'yate' do
-  version '3.12'
-  sha256 '6611b12ef7336e1add86e35345aa2605fde79248c23354736a14384482a72eff'
+  version '3.14.3.4'
+  sha256 '716b87b1a54bd0f91aa48ee4bf3062d09c8fce0f19d0ca5f212c7635c6cb00f6'
 
   url 'https://2manyrobots.com/Updates/Yate/Yate.zip',
-      user_agent: :fake
+      using: :post
   appcast 'https://2manyrobots.com/Updates/Yate/appcast.xml',
-          checkpoint: '50770d2e20a73b0d2cdbd4ad663650e3ee1d963431dfb23b803912df950573b8'
+          checkpoint: '04e543a96a8bd7780b5b98c91546bae583d2fbffaf28068cf008e019119c7465'
   name 'Yate'
   homepage 'https://2manyrobots.com/yate/'
-  license :commercial
 
   app 'Yate.app'
 end

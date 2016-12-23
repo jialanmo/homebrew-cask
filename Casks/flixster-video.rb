@@ -1,14 +1,13 @@
 cask 'flixster-video' do
-  version '2.6.5.532'
-  sha256 '4b87b8c142df47056730d47a04dba7b798ce925bc66b736911259656243b27d1'
+  version '2.7.0.608'
+  sha256 'f9b447fbb938d62eba39618c1f85473915fa20ca01154c10c57784010bb4ed72'
 
   # d1rtylazwb77ux.cloudfront.net was verified as official when first introduced to the cask
   url 'https://d1rtylazwb77ux.cloudfront.net/desktop/mac/FlixsterDesktop.zip'
   appcast 'https://d1rtylazwb77ux.cloudfront.net/desktop/mac/FlixsterDesktopMacAppcast.xml',
-          checkpoint: 'b576c9b6d28c891d19596b3ad6e093e29f432a0b5f45641a5208b40cd9501372'
+          checkpoint: '0e5e4ab27bdd264491186aa849ab6c134f32316fcac060cb4d1039baac39c593'
   name 'Flixster Video'
   homepage 'https://www.flixster.com/about/ultraviolet/'
-  license :gratis
 
   app 'Flixster Video.app'
 

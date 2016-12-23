@@ -5,21 +5,20 @@ cask 'dwarf-fortress' do
   url "http://www.bay12games.com/dwarves/df_#{version.minor}_#{version.patch}_osx.tar.bz2"
   name 'Dwarf Fortress'
   homepage 'http://www.bay12games.com/dwarves/'
-  license :gratis
 
   # shim script (https://github.com/caskroom/homebrew-cask/issues/18809)
-  shimscript = "#{staged_path}/df_wrapper"
+  shimscript = "#{staged_path}/df_osx/df.wrapper.sh"
   depends_on cask: 'sdl-framework'
   depends_on cask: 'sdl-ttf-framework'
 
   binary shimscript, target: 'dwarf-fortress'
 
   preflight do
-    File.open(shimscript, 'w') do |f|
-      f.puts '#!/bin/sh'
-      f.puts "cd '#{staged_path}/df_osx' && ./df \"$@\""
-      FileUtils.chmod '+x', f
-    end
+    IO.write shimscript, <<-EOS.undent
+      #!/bin/sh
+      exec '#{staged_path}/df_osx/df' "$@"
+    EOS
+    FileUtils.chmod '+x', shimscript
   end
 
   postflight do
@@ -36,7 +35,7 @@ cask 'dwarf-fortress' do
   end
 
   uninstall_preflight do
-    system 'cp', '-r', "#{staged_path}/df_osx/data/save", '/tmp/dwarf-fortress-save/'
+    system_command '/bin/cp', args: ['-rf', "#{staged_path}/df_osx/data/save", '/tmp/dwarf-fortress-save/']
   end
 
   caveats 'During uninstall, your save data will be copied to /tmp/dwarf-fortress-save'

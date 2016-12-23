@@ -1,15 +1,14 @@
 cask 'p5' do
   # note: "5" is not a version number, but an intrinsic part of the product name
-  version '0.6.0'
-  sha256 '0422a61a0b24a3ba3ac03c89e7b57cf1de58be5cbd9163d673a81882bc1cae58'
+  version '0.6.2'
+  sha256 'd6688ad97708604b082332355aacdd24a2be28c14cc26ef452716be7d34fe255'
 
   # github.com/processing/p5.js-editor was verified as official when first introduced to the cask
   url "https://github.com/processing/p5.js-editor/releases/download/v#{version}/p5-mac.zip"
   appcast 'https://github.com/processing/p5.js-editor/releases.atom',
-          checkpoint: '06236c5ce5c6731b52368f4d7263eff97624f9c102781805daa202a7f3b46a94'
+          checkpoint: 'be59b9f02d63c2c3ad02c6736566605dc0931d26d6d814c9187ed0f6f2c1bcf9'
   name 'p5.js Editor'
-  homepage 'http://p5js.org/download/#editor'
-  license :mit
+  homepage 'https://p5js.org/download/#editor'
 
   app 'p5.app'
 end

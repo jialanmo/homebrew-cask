@@ -1,13 +1,12 @@
 cask 'jwzlyrics' do
-  version '1.13'
-  sha256 '33661b9ec28f38be48fcd7bb53c9b90a0d1dc4e32eafc69b1896a15c44c0b776'
+  version '1.15'
+  sha256 '515dac45a710739685a77fc09f70bf880a73a9cb635b099ea8e54b51c3dc2584'
 
   url "https://www.jwz.org/jwzlyrics/jwzlyrics-#{version}.zip"
   appcast 'https://www.jwz.org/jwzlyrics/updates.xml',
-          checkpoint: 'c48af683455fe3c72bc0aabc1c2e1d7dfa74c06dc5b41cb928b91709c5b01768'
+          checkpoint: '20f0e3e4b12b9ea8436de3d36fad445f44e7271af14416ea9b2a5a7b9d7b779f'
   name 'jwzlyrics'
   homepage 'https://www.jwz.org/jwzlyrics/'
-  license :unknown
 
   app 'jwzlyrics.app'
 end

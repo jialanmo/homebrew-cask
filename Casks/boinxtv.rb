@@ -5,10 +5,8 @@ cask 'boinxtv' do
   url "https://cdn.boinx.com/software/boinxtv/Boinx_BoinxTV_#{version}.app.zip"
   name 'BoinxTV'
   homepage 'https://boinx.com/boinxtv/'
-  license :commercial
 
   depends_on macos: '>= :lion'
-  depends_on arch: :intel
 
   app 'BoinxTV.app'
 end

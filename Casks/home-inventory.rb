@@ -2,12 +2,11 @@ cask 'home-inventory' do
   version :latest
   sha256 :no_check
 
-  url 'http://binaryformations.com/homeinventory/HomeInventory.dmg'
+  url 'https://binaryformations.com/homeinventory/HomeInventory.dmg'
   name 'Home Inventory'
-  homepage 'http://binaryformations.com/products/home-inventory/'
-  license :commercial
+  homepage 'https://binaryformations.com/products/home-inventory/'
 
-  depends_on macos: '>= 10.7'
+  depends_on macos: '>= :lion'
 
   app 'Home Inventory.app'
 

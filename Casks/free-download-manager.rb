@@ -1,11 +1,10 @@
 cask 'free-download-manager' do
-  version '5.1'
-  sha256 '7ad5ef681371f290bef80ef1fd1f2856e5873c252183da7066601f79d6fa45c9'
+  version '5.1.20'
+  sha256 '83c38d69adf3174025a7e5d764df0137160325ed0c108e2c36abdeb06be2c2ed'
 
-  url "http://files2.freedownloadmanager.org/#{version.major}/#{version}-latest/fdm.dmg"
+  url "http://files2.freedownloadmanager.org/#{version.major}/#{version.major_minor}-latest/fdm.dmg"
   name 'Free Download Manager'
   homepage 'http://www.freedownloadmanager.org/landing5.htm'
-  license :gratis
 
   app 'Free Download Manager.app'
 end

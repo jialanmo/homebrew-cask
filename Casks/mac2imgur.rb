@@ -1,14 +1,12 @@
 cask 'mac2imgur' do
-  version '3.0'
-  sha256 '49d731e9dc15378c2045d459ce910a13154cb37d8e0f2126ceed973557a02d92'
+  version 'b219'
+  sha256 'b554d3a2083ba88451d614f243a9b599cfc546a5c0844f02f4375f703f2f60b9'
 
-  # mileswd.com/mac2imgur was verified as official when first introduced to the cask
-  url 'https://mileswd.com/mac2imgur/latest'
+  url "https://github.com/mileswd/mac2imgur/releases/download/#{version}/mac2imgur.zip"
   appcast 'https://mileswd.com/mac2imgur/update',
-          checkpoint: '44cb757471fd9b77cbf244f8b32220f46975a2047455c70b8a3a92f3f9462149'
+          checkpoint: '76c8d74c003e2fdd4c9b2062acff9f7badb863fdab3f11c86fb745be59af3d15'
   name 'mac2imgur'
   homepage 'https://github.com/mileswd/mac2imgur'
-  license :gpl
 
   app 'mac2imgur.app'
 

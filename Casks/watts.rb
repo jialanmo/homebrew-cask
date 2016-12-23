@@ -5,8 +5,7 @@ cask 'watts' do
   # matchingbrackets.com/abatt was verified as official when first introduced to the cask
   url 'http://www.matchingbrackets.com/abatt/customer/Watts-48.dmg'
   name 'Watts'
-  homepage 'http://binarytricks.com/'
-  license :commercial
+  homepage 'https://binarytricks.com/'
 
   app 'Watts.app'
 end

@@ -1,11 +1,10 @@
 cask 'navicat-for-sqlite' do
-  version '11.2.11'
-  sha256 'fa6bcd775f0ce2a6b462a1574d5e3f606c57f5c0b0b8f0a10e1d026be7a5450a'
+  version '11.2.15'
+  sha256 'a04e84ae6ded5e6c5045ee3b2b88b568822a701f12924196097fba664c0073c4'
 
   url "http://download.navicat.com/download/navicat#{version.major_minor.no_dots}_sqlite_en.dmg"
   name 'Navicat for SQLite'
-  homepage 'http://www.navicat.com/products/navicat-for-sqlite'
-  license :commercial
+  homepage 'https://www.navicat.com/products/navicat-for-sqlite'
 
   app 'Navicat for SQLite.app'
 end

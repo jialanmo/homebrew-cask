@@ -5,9 +5,6 @@ cask 'icefloor' do
   url "http://www.hanynet.com/icefloor-#{version}.zip"
   name 'IceFloor'
   homepage 'http://www.hanynet.com/icefloor/'
-  license :oss
-
-  container nested: "IceFloor #{version}.dmg"
 
   app 'IceFloor.app'
 end

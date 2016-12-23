@@ -1,11 +1,10 @@
 cask 'tableau-public' do
-  version '9.3.0'
-  sha256 '73f82fb7eac3f99a52ed53f48457b031db2d38b9cf1a30462dffa655a4618012'
+  version '10.1.2'
+  sha256 'd82c463c2edd07d4c98e62ad992d80c9be44e6cf3ce96e23e035acdc06ebe6ae'
 
   url "https://downloads.tableau.com/public/TableauPublic-#{version.dots_to_hyphens}.dmg"
   name 'Tableau Public'
-  homepage 'https://public.tableau.com/'
-  license :unknown # TODO: change license and remove this comment; ':unknown' is a machine-generated placeholder
+  homepage 'https://public.tableau.com/s/'
 
   app 'Tableau Public.app'
 end

@@ -7,9 +7,8 @@ cask 'better-window-manager' do
           checkpoint: '2931f2c377563320bfc052fa3afd887340263a1a22c0d11bdedde710d9156353'
   name 'Better Window Manager'
   homepage 'https://www.gngrwzrd.com/better-window-manager/'
-  license :commercial
 
-  depends_on macos: '>= 10.10'
+  depends_on macos: '>= :yosemite'
 
   app 'Better Window Manager.app'
 end

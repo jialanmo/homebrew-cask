@@ -1,21 +1,15 @@
 cask 'reaper' do
-  version '5.211'
+  version '5.30'
+  sha256 'b8fa46b6f769e4381eb390b6ee5b9d159954fe7f100eb3a359e538ad46d3d42a'
 
-  if Hardware::CPU.is_32_bit?
-    sha256 '05f31b0bc13c639902b5c333a8617b3caf1ea40c3779983ae2878ef8741af9a6'
-    url "http://www.reaper.fm/files/#{version.to_i}.x/reaper#{version.no_dots}_i386.dmg"
-    app 'REAPER.app'
-    app 'ReaMote.app'
-  else
-    sha256 '960ad5df1c6e7ad5356ed5964402d8575453750280a28eadfa56fdff78cdd7ef'
-    url "http://www.reaper.fm/files/#{version.to_i}.x/reaper#{version.no_dots}_x86_64.dmg"
-    app 'REAPER64.app'
-    app 'ReaMote64.app'
-  end
-
+  url "http://www.reaper.fm/files/#{version.major}.x/reaper#{version.no_dots}_x86_64.dmg"
+  appcast 'http://www.reaper.fm/whatsnew.txt',
+          checkpoint: '5546006cb84dfd74cbd2078900b048491c347b40ca61b0f34ea5b7c44127abe7'
   name 'REAPER'
   homepage 'http://www.reaper.fm/'
-  license :commercial
+
+  app 'REAPER64.app'
+  app 'ReaMote64.app'
 
   zap delete: [
                 '~/Library/Application Support/REAPER',

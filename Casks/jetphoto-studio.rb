@@ -5,9 +5,6 @@ cask 'jetphoto-studio' do
   url "http://www.jetphotosoft.com/web/download/JetPhoto_Studio_mac#{version}.zip"
   name 'JetPhoto Studio'
   homepage 'http://www.jetphotosoft.com/web/home/'
-  license :freemium
-
-  container nested: "JetPhoto Studio #{version}.dmg"
 
   app 'JetPhoto Studio.app'
 end

@@ -4,8 +4,7 @@ cask 'synologyeiauthenticator' do
 
   url "https://global.download.synology.com/download/Tools/EvidenceIntegrityAuthenticator/#{version}/Mac/SynologyEIAuthenticator-#{version}.dmg"
   name 'Synology Evidence Integrity Authenticator'
-  homepage 'https://www.synology.com'
-  license :closed
+  homepage 'https://www.synology.com/'
 
   app 'SynologyEIAuthenticator.app'
 end

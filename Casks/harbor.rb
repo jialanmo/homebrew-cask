@@ -1,13 +1,12 @@
 cask 'harbor' do
-  version '0.1'
-  sha256 '1de5be9ac66bdb79b2dd2ef4e6303f0bbc93c7fca11561e446e8d67d94ab14ef'
+  version '0.1.2'
+  sha256 '3330b8f76fd7c4e495e8b9ce2e929157b10c3686a33e403478b5f5947aac2b0b'
 
   url "https://github.com/devmynd/harbor/releases/download/v#{version}/Harbor.app.zip"
   appcast 'https://github.com/devmynd/harbor/releases.atom',
-          checkpoint: '2495aabeb35c634b8b49f63d142851cd79dee329b35e9f5048293d0b4772e8eb'
+          checkpoint: 'b8f2d7d68567b57751324c4b62a8956f70c52c7cb1237aa16aaf82bd38745aea'
   name 'Harbor'
   homepage 'https://github.com/devmynd/harbor'
-  license :mit
 
   app 'Harbor.app'
 end

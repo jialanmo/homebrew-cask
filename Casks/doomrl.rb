@@ -4,10 +4,7 @@ cask 'doomrl' do
 
   url "http://doom.chaosforge.org/file_download/31/doomrl-#{version}.dmg"
   name 'Doom the Roguelike'
-  homepage 'http://doom.chaosforge.org'
-  license :gratis
-
-  depends_on arch: :x86_64
+  homepage 'https://doom.chaosforge.org/'
 
   app 'DoomRL.app'
 end

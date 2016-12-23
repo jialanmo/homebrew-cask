@@ -1,13 +1,12 @@
 cask 'xamarin-android' do
-  version '6.1.1-1'
-  sha256 'c89e6a390ef9d25e932b0cb4043831912cb67a1c335f19b7ddd654c8f2846c12'
+  version '7.0.2-38'
+  sha256 '778a09fce75d8c823a8f0cd0e5b8cd932300be0a20b8f3c829aa4b17fe880bf7'
 
-  url "https://download.xamarin.com/MonoforAndroid/Mac/xamarin.android-#{version}.pkg"
+  url "https://dl.xamarin.com/MonoforAndroid/Mac/xamarin.android-#{version}.pkg"
   appcast 'https://static.xamarin.com/installer_assets/v3/Mac/Universal/InstallationManifest.xml',
-          checkpoint: '2cb6260bf1f5348e125fe9cab2effe9862fe76f0706f146dd91c827827cdda6b'
+          checkpoint: '48d144620a3f8785b258c63ee2fb7e75a97b40ad3bfb947a74b914440df16422'
   name 'Xamarin.Android'
-  homepage 'https://xamarin.com/android'
-  license :unknown # TODO: change license and remove this comment; ':unknown' is a machine-generated placeholder
+  homepage 'https://www.xamarin.com/platform'
 
   pkg "xamarin.android-#{version}.pkg"
 

@@ -42,7 +42,7 @@ The command `brew cask install` accepts a Cask token as returned by `brew cask s
 $ brew cask install google-chrome
 ==> Downloading https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg
 ==> Moving App 'Google Chrome.app' to '/Applications/Google Chrome.app'
-🍺  google-chrome staged at '/usr/local/Caskroom/google-chrome/latest' (3 files, 288K)
+🍺  google-chrome was successfully installed!
 ```
 
 ## Uninstalling Casks
@@ -117,12 +117,13 @@ Show details about a specific Cask:
 ```bash
 $ brew cask info caffeine
 caffeine: 1.1.1
-Caffeine
 http://lightheadsw.com/caffeine/
 Not installed
-https://github.com/caskroom/homebrew-cask/blob/master/Casks/caffeine.rb
-==> Contents
-  Caffeine.app (app)
+From: https://github.com/caskroom/homebrew-cask/blob/master/Casks/caffeine.rb
+==> Name
+Caffeine
+==> Artifacts
+Caffeine.app (app)
 ```
 
 ## Updating/Upgrading Casks
@@ -171,17 +172,17 @@ $ brew cask install caskroom/fonts/font-symbola
 You can also modify the default installation locations used when issuing `brew cask install`:
 
 * `--caskroom=/my/path` determines where the actual applications will be located.
-Default is `$(brew --repository)/Caskroom`
+Default is `$(brew --prefix)/Caskroom`
 * `--appdir=/my/path` changes the path where the applications (above)
 will be moved. Default is `/Applications`.
 * `--prefpanedir=/my/path` changes the path for PreferencePanes.
 Default is `~/Library/PreferencePanes`
 * `--qlplugindir=/my/path` changes the path for Quicklook Plugins.
 Default is `~/Library/QuickLook`
+* `--dictionarydir=/my/path` changes the path for Dictionaries.
+Default is `~/Library/Dictionaries`
 * `--fontdir=/my/path` changes the path for Fonts.
 Default is `~/Library/Fonts`
-* `--binarydir=/my/path` changes the path for Binary symlinks.
-Default is `/usr/local/bin`
 * `--input_methoddir=/my/path` changes the path for Input Methods.
 Default is `~/Library/Input Methods`
 * `--screen_saverdir=/my/path` changes the path for Screen Savers.

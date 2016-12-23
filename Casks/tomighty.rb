@@ -1,14 +1,13 @@
 cask 'tomighty' do
-  version '1.0.1'
-  sha256 '14ba9d4bc6e910e1c5bc256de4136db1e3e8d0671318b20c78f586a136a78793'
+  version '1.2'
+  sha256 '0ebee4c2c913a75b15fed071d68c22c866a3d8436ad359eb2ee66e27d39b2214'
 
   # github.com/tomighty/tomighty-osx was verified as official when first introduced to the cask
-  url "https://github.com/tomighty/tomighty-osx/releases/download/v#{version}/Tomighty-#{version}.dmg"
+  url "https://github.com/tomighty/tomighty-osx/releases/download/#{version}/Tomighty-#{version}.dmg"
   appcast 'https://github.com/tomighty/tomighty-osx/releases.atom',
-          checkpoint: '3ccc1006f6bdba0a3fb7314c23e8089d5acc0edac9e8955315e25a1c56e19d8f'
+          checkpoint: 'f9f70f4d9e024d104d6783c6aa0633ef31a61300ff65412eb2a457b191914a57'
   name 'Tomighty'
-  homepage 'http://www.tomighty.org/'
-  license :apache
+  homepage 'http://tomighty.org/'
 
   app 'Tomighty.app'
 end

@@ -4,8 +4,7 @@ cask 'filemaker-odbc' do
 
   url "http://fmdl.filemaker.com/UPDT/#{version.major}/FM#{version.major_minor}v1_xDBC_#{version}.dmg"
   name 'FileMaker ODBC Client Drivers'
-  homepage 'http://www.filemaker.com'
-  license :gratis
+  homepage 'https://www.filemaker.com/'
 
   pkg 'ODBC Client Driver Installer/FileMaker ODBC.pkg'
 

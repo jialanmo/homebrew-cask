@@ -1,12 +1,11 @@
 cask 'sqlpro-studio' do
-  version '1.0.27'
-  sha256 '1663cfd9f7034c5fd00282978dc692c6ff96c7d7bb17017a1dd762202873dab9'
+  version '1.0.80'
+  sha256 '7270ba3a5c15277e8e961542baf4735287db99392921624373769eda5e9792d7'
 
   # d3fwkemdw8spx3.cloudfront.net/studio was verified as official when first introduced to the cask
   url "https://d3fwkemdw8spx3.cloudfront.net/studio/SQLProStudio.#{version}.app.zip"
   name 'SQLPro Studio'
-  homepage 'http://www.sqlprostudio.com'
-  license :commercial
+  homepage 'https://www.sqlprostudio.com/'
 
   app 'SQLPro Studio.app'
 

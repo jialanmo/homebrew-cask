@@ -2,10 +2,9 @@ cask 'phonebrowse' do
   version :latest
   sha256 :no_check
 
-  url 'http://www.imobie.com/product/phonebrowse-mac.dmg'
+  url 'https://www.imobie.com/product/phonebrowse-mac.dmg'
   name 'PhoneBrowse'
-  homepage 'http://www.imobie.com/phonebrowse'
-  license :gratis
+  homepage 'https://www.imobie.com/phonebrowse/'
 
   app 'PhoneBrowse.app'
 end

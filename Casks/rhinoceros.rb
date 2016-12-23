@@ -1,14 +1,13 @@
 cask 'rhinoceros' do
-  version '5.2'
-  sha256 '2c2fd9553031c5f9709a9ddda188c32806f8293c30e2ac77b19d7fc34b607aa2'
+  version '5.2.4'
+  sha256 'fcaf19fb969608c5952b9b98771ba121f521362bab773fcba7c8831c04430aeb'
 
   # mcneel.com was verified as official when first introduced to the cask
   url "https://files.mcneel.com/Releases/Rhino/#{version.major}.0/Mac/Rhinoceros_#{version}.dmg"
-  appcast 'https://files.mcneel.com/rhino/5.0/mac/5CcommercialUpdates.xml',
-          checkpoint: '259ba86e3ece12b204264854a73bf381e530ded1110e85bf623e7b75297d9f2e'
+  appcast "https://files.mcneel.com/rhino/#{version.major}.0/mac/#{version.major}CcommercialUpdates.xml",
+          checkpoint: '7eec993f342f384ef86530afe43c662e10553db89a4a42fba475f9b0b2fc73da'
   name 'Rhinoceros'
   homepage 'https://www.rhino3d.com/'
-  license :commercial
 
   auto_updates true
 

@@ -1,14 +1,13 @@
 cask 'coderunner' do
-  version '2.1.1'
-  sha256 '8b18a0db9966c537b6eb7b36502e74fa93cfed20aa06e4c56c57ecf3cc9e304c'
+  version '2.2.2'
+  sha256 'f8b9ac72cf73aca026f4e386def197761dabaf0514703d1b6694724845df774b'
 
   # dktfof1z89xc1.cloudfront.net was verified as official when first introduced to the cask
-  url "https://dktfof1z89xc1.cloudfront.net/CodeRunner%20#{version}.zip"
+  url "https://dktfof1z89xc1.cloudfront.net/CodeRunner-#{version}.zip"
   appcast 'https://coderunnerapp.com/appcast.xml',
-          checkpoint: 'aa635031ef7f7c3f2badded4fc5c2ff98009ed9b4c28c8d4aeb722a855a8e204'
+          checkpoint: '65c88fcefb58847ce8dc929ad22d3fc99dd07cdbfa67296ad53d726d34859770'
   name 'CodeRunner'
   homepage 'https://coderunnerapp.com/'
-  license :commercial
 
   app 'CodeRunner.app'
 end

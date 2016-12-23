@@ -8,13 +8,14 @@ cask 'rocket-chat' do
           checkpoint: '922e9d17e94db136177c9d8b3bad4e7eb1a2fb1d5794248cd298c9f4c25176a4'
   name 'Rocket.Chat'
   homepage 'https://rocket.chat/'
-  license :mit
 
   app 'Rocket.Chat+.app'
 
   zap delete: [
                 '~/Library/Application Support/Rocket.Chat+',
                 '~/Library/Caches/Rocket.Chat+',
+                '~/Library/Caches/chat.rocket',
                 '~/Library/Preferences/chat.rocket.plist',
+                '~/Library/Saved Application State/chat.rocket.savedState',
               ]
 end

@@ -1,11 +1,10 @@
 cask 'go-server' do
-  version '16.2.1-3027'
-  sha256 '2f0ab075fa1d2d3d522c7c352820ea0e17604bb4fe5b7722e60d259ad66482ff'
+  version '16.12.0-4352'
+  sha256 'f0b7f7f401e1a11022978c908f02409c0deec9c1cd5d80a6ae334bd82a7749e9'
 
   url "https://download.go.cd/binaries/#{version}/osx/go-server-#{version}-osx.zip"
   name 'Go Server'
   homepage 'https://www.go.cd/'
-  license :apache
 
   app 'Go Server.app'
 end

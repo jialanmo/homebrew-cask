@@ -1,13 +1,12 @@
 cask 'whatsize' do
-  version '5.3.2'
-  sha256 '0b10293ba57e42914d67cdb331ceddbfdb6e2033069378a4f2a25acd8b5a4e34'
+  version '6.5.3'
+  sha256 'd8cdb22f3012ac443ac07b40e79cf1bd330fa6be685857a28b162384109a70a6'
 
-  url 'http://www.whatsizemac.com/software/whatsize6/whatsize.dmg'
+  url "https://www.whatsizemac.com/software/whatsize#{version.major}/whatsize.dmg"
   appcast 'http://www.id-design.com/software/whatsize/release/notes.xml',
-          checkpoint: '279abde04434b0f20a846ad0498828042efe3e6cad2512f8fd0cf98340247866'
+          checkpoint: 'a3939b96017d292cb2c10d7b3a024db78f734bf47d522b548c41e2ff71b74909'
   name 'WhatSize'
-  homepage 'http://whatsizemac.com/'
-  license :commercial
+  homepage 'https://whatsizemac.com/'
 
   app 'WhatSize.app'
 end

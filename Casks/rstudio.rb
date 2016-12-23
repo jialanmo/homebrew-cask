@@ -1,12 +1,13 @@
 cask 'rstudio' do
-  version '0.99.902'
-  sha256 'c0a11f30ebdf4cacaaee450519d3f57fa9d67402594e5ab9c08d9000c2bed379'
+  version '1.0.44'
+  sha256 'ec571ee4d1415cc031f8f55873ca15e75949038fe680520799934e115138066a'
 
   # rstudio.org was verified as official when first introduced to the cask
   url "https://download1.rstudio.org/RStudio-#{version}.dmg"
   name 'RStudio'
   homepage 'https://www.rstudio.com/'
-  license :affero
+
+  depends_on formula: 'homebrew/science/r'
 
   app 'RStudio.app'
 

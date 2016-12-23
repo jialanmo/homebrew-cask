@@ -4,12 +4,11 @@ cask 'kivy' do
 
   url "https://kivy.org/downloads/#{version}/Kivy-#{version}-osx-python3.7z"
   name 'Kivy'
-  homepage 'http://kivy.org'
-  license :mit
+  homepage 'https://kivy.org/'
 
   depends_on formula: 'unar'
 
   # Renamed as suggested by developer: https://kivy.org/docs/installation/installation-osx.html#installation-on-os-x
   app 'Kivy3.app', target: 'Kivy.app'
-  binary "#{appdir}/Kivy3.app/Contents/Resources/script", target: 'kivy'
+  binary "#{appdir}/Kivy.app/Contents/Resources/script", target: 'kivy'
 end

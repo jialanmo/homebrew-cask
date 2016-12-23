@@ -4,8 +4,7 @@ cask 'clipgrab' do
 
   url "https://download.clipgrab.org/ClipGrab-#{version}.dmg"
   name 'ClipGrab'
-  homepage 'http://clipgrab.org'
-  license :gratis
+  homepage 'https://clipgrab.org/'
 
   app 'ClipGrab.app'
 

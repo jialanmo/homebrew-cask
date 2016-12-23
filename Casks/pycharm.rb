@@ -1,11 +1,10 @@
 cask 'pycharm' do
-  version '2016.1.4'
-  sha256 '2f395a34f2e799eebd034a77fd895f20c1a2c2e8bfa9c85b07f848dc216192b4'
+  version '2016.3.1'
+  sha256 '2fed2e5d5173f8fdc67e222c21d33a900b2d2ee9876e39c7d6ea2427396c99a6'
 
   url "https://download.jetbrains.com/python/pycharm-professional-#{version}.dmg"
   name 'PyCharm'
   homepage 'https://www.jetbrains.com/pycharm/'
-  license :commercial
 
   conflicts_with cask: 'pycharm-eap'
 

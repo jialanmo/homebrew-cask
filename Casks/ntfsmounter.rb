@@ -5,9 +5,6 @@ cask 'ntfsmounter' do
   url "http://ntfsmounter.com/NTFS%20Mounter%20#{version}.dmg.zip"
   name 'NTFS Mounter'
   homepage 'http://ntfsmounter.com/'
-  license :gratis
-
-  container nested: "NTFS Mounter #{version}.dmg"
 
   app 'ntfsMounter.app'
 end

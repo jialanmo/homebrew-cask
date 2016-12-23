@@ -5,7 +5,6 @@ cask 'bluestacks' do
   url "http://cdn.bluestacks.com/downloads/#{version}/BlueStacks-Installer.dmg"
   name 'BlueStacks'
   homepage 'http://www.bluestacks.com/'
-  license :closed
 
   app 'BlueStacks.app'
 
@@ -19,8 +18,10 @@ cask 'bluestacks' do
 
   zap       delete: [
                       '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.bluestacks.bluestacks.sfl',
+                      '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.bluestacks.bluestacks-support-tool.sfl',
                       '~/Library/BlueStacks',
                       '~/Library/Caches/com.bluestacks.BlueStacks',
+                      '~/Library/Caches/com.bluestacks.BlueStacks-Support-Tool',
                       '~/Library/Caches/KSCrashReports/BlueStacks',
                       '~/Library/Logs/BlueStacks',
                       '~/Library/Preferences/com.BlueStacks.AppPlayer.DiagnosticTimestamp.txt',

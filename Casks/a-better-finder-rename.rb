@@ -1,13 +1,24 @@
 cask 'a-better-finder-rename' do
-  version '10.07'
-  sha256 'be7e40b1e0365c28a4346b786e070282190504acee5f1bb9823fe7afb36851db'
+  version '10.12'
+  sha256 '75a0e83ca49cea6d3aa35797d9fbf0047fc6f021ce56e328e6c299f7218518c3'
 
   url "http://www.publicspace.net/download/ABFRX#{version.major}.dmg"
   appcast "http://www.publicspace.net/app/signed_abfr#{version.major}.xml",
-          checkpoint: '33c859d63db37e6513deb23bad8a77d730f06d64bb8ea0d4e97c67a520b5d114'
+          checkpoint: 'e76f8bb2ec07ddd5a13b5ef2fb8560550802906ebfcc2f57eacc2e426d5dbb51'
   name 'A Better Finder Rename'
   homepage 'http://www.publicspace.net/ABetterFinderRename/'
-  license :commercial
+
+  auto_updates true
+  depends_on macos: '>= :lion'
 
   app "A Better Finder Rename #{version.major}.app"
+
+  zap delete: [
+                "~/Library/Application Support/A Better Finder Rename #{version.major}",
+                "~/Library/Caches/com.apple.helpd/Generated/net.publicspace.abfr#{version.major}.help",
+                "~/Library/Caches/net.publicspace.abfr#{version.major}",
+                "~/Library/Cookies/net.publicspace.abfr#{version.major}.binarycookies",
+                "~/Library/Preferences/net.publicspace.abfr#{version.major}.plist",
+                "~/Library/Saved Application State/net.publicspace.abfr#{version.major}.savedState",
+              ]
 end

@@ -1,11 +1,10 @@
 cask 'mamp' do
-  version '3.5'
-  sha256 '9961cc2a96cb23388a64e48e0bda7a2d5c4d555c16801e15571f548b185438d9'
+  version '4.0.6'
+  sha256 '04aeec3c6a89c998000e86446859a3233f30cec6716fdcad0d9c57c35a4afe66'
 
   url "https://downloads.mamp.info/MAMP-PRO/releases/#{version}/MAMP_MAMP_PRO_#{version}.pkg"
   name 'MAMP'
   homepage 'https://www.mamp.info/'
-  license :freemium
 
   pkg "MAMP_MAMP_PRO_#{version}.pkg"
 

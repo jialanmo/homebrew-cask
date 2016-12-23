@@ -1,11 +1,10 @@
 cask 'pomodone' do
-  version :latest
-  sha256 :no_check
+  version '1.5.856'
+  sha256 '4a51bf6f5b17493545d355101c2407e6b76be40a744a142d330c666636f7ee39'
 
-  url 'https://app.pomodoneapp.com/PomoDone.dmg'
+  url "https://app.pomodoneapp.com/PomoDoneApp-#{version}.dmg"
   name 'PomoDone'
-  homepage 'http://pomodoneapp.com/'
-  license :gratis
+  homepage 'https://pomodoneapp.com/'
 
-  app 'PomoDone.app'
+  app 'PomoDoneApp.app'
 end

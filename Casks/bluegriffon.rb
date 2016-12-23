@@ -1,11 +1,12 @@
 cask 'bluegriffon' do
-  version '1.7.2'
-  sha256 'a54cfe176dbc67ffa4fdd20b41447fb4c4f2fbf1f80282d81e93e63b5d4b996f'
+  version '2.1.2'
+  sha256 '8a7a0586c8f4ae002886c3c80f4ddbff65648429c56c8e45d4d08dca9ac85b66'
 
   url "http://bluegriffon.org/freshmeat/#{version}/bluegriffon-#{version}.mac.dmg"
   name 'BlueGriffon'
-  homepage 'http://bluegriffon.org'
-  license :oss
+  homepage 'http://bluegriffon.org/'
+
+  depends_on macos: '>= :mountain_lion'
 
   app 'BlueGriffon.app'
 end

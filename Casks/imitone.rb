@@ -1,11 +1,10 @@
 cask 'imitone' do
-  version '0.8.1'
-  sha256 'ae12d7efe41abc9d1dc1ea3430ced38c85394b364c576b6ce70d900fb7759f4a'
+  version '0.9.0c'
+  sha256 '654cd6a18bdb7bce708a715af54cf746b89421c440bbce6a957599fbd2f19f99'
 
   url "https://imitone.com/beta/imitone-#{version}.dmg"
   name 'imitone'
   homepage 'https://imitone.com/'
-  license :commercial
 
   app 'imitone.app'
 end

@@ -1,12 +1,11 @@
 cask 'krita' do
-  version '3.0'
-  sha256 '8c678bdf6804c5b8decf08093fce809f2c78f664604dfe91b4ded91b3b5e4e00'
+  version '3.1.0'
+  sha256 '326233b181610c91bcb5126c6350c7e74747cc84cb6d48a1f219d39beb226760'
 
-  # kde.org/krita was verified as official when first introduced to the cask
-  url "https://files.kde.org/krita/#{version.major}/osx/krita-#{version}.dmg"
+  # kde.org/stable/krita was verified as official when first introduced to the cask
+  url "http://download.kde.org/stable/krita/#{version}/krita-#{version}.dmg"
   name 'Krita'
   homepage 'https://krita.org/'
-  license :gpl
 
   app 'Krita.app'
 end

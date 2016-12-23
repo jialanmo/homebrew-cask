@@ -1,13 +1,12 @@
 cask 'gear-player' do
-  version '2.2.27'
-  sha256 'ad82c6bcbee15e3d75f704d1c70c46ddbc3f5cada61bacd74c13a81eb3474ae7'
+  version '2.2.30'
+  sha256 '4723688e3c8a68dfc9079ca4692787051d69831b0f76a49fe6f78081f0c8ce04'
 
   url 'https://dl.gearmusicplayer.com/gearupdate.zip'
   appcast 'https://dl.gearmusicplayer.com/gearcast.xml',
-          checkpoint: 'e45ff68683505ec1b24f23c8195ffaf31846df05f39e0895ba36aae873daa673'
+          checkpoint: '3ad0ec6ab12d4818f3793ef615e4c716dd3411fe33652e391a55262239a21958'
   name 'Gear Player'
-  homepage 'https://www.gearmusicplayer.com'
-  license :commercial
+  homepage 'https://www.gearmusicplayer.com/'
 
   auto_updates true
 

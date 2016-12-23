@@ -5,9 +5,6 @@ cask 'waterroof' do
   url "http://www.hanynet.com/waterroof-#{version}.zip"
   name 'WaterRoof'
   homepage 'http://www.hanynet.com/waterroof/'
-  license :oss
-
-  container nested: "WaterRoof #{version}.dmg"
 
   app 'WaterRoof.app'
 end

@@ -5,7 +5,6 @@ cask 'fetch' do
   url "http://fetchsoftworks.com/fetch/download/Fetch_#{version}.dmg?direct=1"
   name 'Fetch'
   homepage 'http://fetchsoftworks.com/fetch/'
-  license :commercial
 
   app 'Fetch.app'
 end

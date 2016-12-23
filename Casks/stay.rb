@@ -1,13 +1,12 @@
 cask 'stay' do
-  version '1.2.5'
-  sha256 '4ca4048d75c2b3199e1a46c06797a1a483ebf7f9ca9fa48ddac9eb1bfe75bc58'
+  version '1.2.7'
+  sha256 '332d7046630e0ed9367e635081f1eaadbecfb52e655448edc7f173d3c72c1ce5'
 
-  url "https://cordlessdog.com/stay/versions/Stay%20#{version}.zip"
+  url "https://cordlessdog.com/stay/versions/Stay%20#{version}.dmg"
   appcast 'https://cordlessdog.com/stay/appcast.xml',
-          checkpoint: 'dd47f901301581842a3ed3754de4285c41453b43529391421073e805f80aed96'
+          checkpoint: '29ba88cd7fd5d9692b9d348f645daa94ea7d5c63fd0746478e3d7fc1cd0ea0e1'
   name 'Stay'
   homepage 'https://cordlessdog.com/stay/'
-  license :commercial
 
   app 'Stay.app'
 end

@@ -5,10 +5,8 @@ cask 'polycode' do
   url "http://polycode.org/download/content/PolycodeDarwin_#{version}.zip"
   name 'Polycode'
   homepage 'http://polycode.org/'
-  license :mit
 
   depends_on macos: '>= :lion'
-  depends_on arch: :x86_64
 
   app 'Darwin/Polycode.app'
 end

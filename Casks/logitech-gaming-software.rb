@@ -1,11 +1,10 @@
 cask 'logitech-gaming-software' do
-  version '8.79.45'
-  sha256 '7385e438a7bf3956f05e8420b723b5e1a0b0502c308b075419dde5552c593f55'
+  version '8.87.92'
+  sha256 'acc6a474d1cde82a7e21fe24f5ce32af0ee7307ec7d1e2dd4389249c83e5c7c5'
 
   url "http://download01.logitech.com/web/ftp/pub/techsupport/gaming/LogitechSetup_#{version}.zip"
   name 'Logitech Gaming Software'
-  homepage 'http://support.logitech.com/en_us/downloads'
-  license :unknown # TODO: change license and remove this comment; ':unknown' is a machine-generated placeholder
+  homepage 'https://support.logitech.com/en_us/downloads'
 
   pkg 'LogitechGamingInstaller.app/Contents/Resources/LogiGamingSetup.mpkg'
 

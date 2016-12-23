@@ -4,8 +4,7 @@ cask 'ship' do
 
   url 'https://www.realartists.com/Ship.app.zip'
   name 'Ship'
-  homepage 'https://www.realartists.com'
-  license :commercial
+  homepage 'https://www.realartists.com/'
 
   app 'Ship.app'
 

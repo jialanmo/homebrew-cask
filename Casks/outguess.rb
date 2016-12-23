@@ -4,11 +4,9 @@ cask 'outguess' do
 
   url 'http://www.rbcafe.com/download/outguess.zip'
   name 'Outguess'
-  homepage 'http://www.rbcafe.com/softwares/outguess/'
-  license :gratis
+  homepage 'http://www.rbcafe.com/software/outguess/'
 
   depends_on macos: '>= :mountain_lion'
-  depends_on arch: :intel
 
   app 'Outguess.app'
 end

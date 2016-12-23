@@ -4,12 +4,20 @@ cask 'zoomus' do
 
   url 'https://zoom.us/client/latest/zoomusInstaller.pkg'
   name 'Zoom.us'
-  homepage 'https://www.zoom.us'
-  license :gratis
+  homepage 'https://www.zoom.us/'
+
+  auto_updates true
 
   pkg 'zoomusInstaller.pkg'
 
   uninstall delete: '/Applications/zoom.us.app'
 
-  zap       delete: '~/Desktop/Zoom'
+  zap       delete: [
+                      '~/Desktop/Zoom',
+                      '~/Library/Internet Plug-Ins/ZoomUsPlugIn.plugin',
+                      '~/Library/Preferences/us.zoom.xos.plist',
+                      '~/Library/Application Support/zoom.us',
+                      '~/Library/Caches/us.zoom.xos',
+                      '~/Library/Logs/zoom.us',
+                    ]
 end

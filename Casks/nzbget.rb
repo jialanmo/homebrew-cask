@@ -1,14 +1,13 @@
 cask 'nzbget' do
-  version '16.4'
-  sha256 '90d7c1282f89e9cab67dd2681b76b45889481fb188ea7de0a06b842b9d7b5589'
+  version '17.1'
+  sha256 'cc7bd923974c56b59bab78025175a4a7248a495e8d514bd73c1d8ee4aba281d2'
 
   # github.com/nzbget/nzbget was verified as official when first introduced to the cask
   url "https://github.com/nzbget/nzbget/releases/download/v#{version}/nzbget-#{version}-bin-osx.zip"
   appcast 'https://github.com/nzbget/nzbget/releases.atom',
-          checkpoint: '8baed2fe56a2d408266e7d5aa88285ffbd46184f2717da1d7d6b3039d79dac31'
+          checkpoint: 'cc9ea4ea0bc52bb1f0cb11e01f32d79c4e90c85dda1e20f2fed81abde027fb40'
   name 'NZBGet'
-  homepage 'http://nzbget.net'
-  license :gpl
+  homepage 'http://nzbget.net/'
 
   app 'NZBGet.app'
 

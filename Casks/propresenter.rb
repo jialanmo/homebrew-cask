@@ -1,13 +1,12 @@
 cask 'propresenter' do
-  version '6.0.21_b15122'
-  sha256 '9b4938becdd0e8dd561c287217b758e4c59573a28bf8ad7a93b2b208d2d06290'
+  version '6.1.2_b15157'
+  sha256 '693a1ee058ed307a85ce0e7c09e4c9d44902bab52dc422465bc46ab7cd4a85c9'
 
-  url "https://www.renewedvision.com/downloads/ProPresenter6_#{version}.dmg"
-  appcast 'https://www.renewedvision.com/update/ProPresenter6.php',
-          checkpoint: 'f04881c065c2168c32450ee40c62eca046536197870ae65b21c9bf459358596f'
+  url "https://www.renewedvision.com/downloads/ProPresenter#{version.major}_#{version}.dmg"
+  appcast "https://www.renewedvision.com/update/ProPresenter#{version.major}.php",
+          checkpoint: '8fbd91f023565ce9cffe855793fe29849812fda7710cb0224b5de8020d524b8a'
   name 'ProPresenter'
   homepage 'https://www.renewedvision.com/propresenter.php'
-  license :commercial
 
-  app 'ProPresenter 6.app'
+  app "ProPresenter #{version.major}.app"
 end

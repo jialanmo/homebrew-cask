@@ -1,11 +1,10 @@
 cask 'robomongo' do
-  version '0.9.0-rc9,0bb5668'
-  sha256 'bffbbc16971af6caeff81c6a3f132dc3ee6be03b9766449e1b9b78847edc3a2b'
+  version '0.9.0,0786489'
+  sha256 '35862af46635e33d89d5af3164f7cf445862add199a2645b0f246102df93691c'
 
   url "https://download.robomongo.org/#{version.before_comma}/osx/robomongo-#{version.before_comma}-darwin-x86_64-#{version.after_comma}.dmg"
   name 'Robomongo'
-  homepage 'https://robomongo.org'
-  license :gpl
+  homepage 'https://robomongo.org/'
 
   app 'Robomongo.app'
 

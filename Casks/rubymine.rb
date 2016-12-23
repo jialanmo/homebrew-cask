@@ -1,11 +1,10 @@
 cask 'rubymine' do
-  version '2016.1.1b'
-  sha256 '86ada622827c32bb8dc646f7696bfa63a33e9f0386fb6ab30c89391b3fd5e67b'
+  version '2016.3'
+  sha256 'f1d905ed0073418d74cc3de6f8d662c02c744dc6a9e5879f0bf5b6750d13f5c3'
 
   url "https://download.jetbrains.com/ruby/RubyMine-#{version}.dmg"
   name 'RubyMine'
   homepage 'https://www.jetbrains.com/ruby/'
-  license :commercial
 
   conflicts_with cask: 'rubymine-eap'
 

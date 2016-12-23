@@ -1,11 +1,12 @@
 cask 'sauce-connect' do
-  version '4.3.13'
-  sha256 '97541227092564a4f15f25ba9b3257da8e1ffebc827d5c5cbd66e674d8a20cba'
+  version '4.4.2'
+  sha256 '9f7672902c7fbe99283b3a96603b2ebcc2a6383005a65f0d73fd56a3403c760e'
 
   url "https://saucelabs.com/downloads/sc-#{version}-osx.zip"
   name 'Sauce Connect'
-  homepage 'https://docs.saucelabs.com/reference/sauce-connect/'
-  license :gratis
+  homepage 'https://wiki.saucelabs.com/display/DOCS/Setting+Up+Sauce+Connect'
+
+  depends_on macos: '>= :mountain_lion'
 
   binary "sc-#{version}-osx/bin/sc"
 end
